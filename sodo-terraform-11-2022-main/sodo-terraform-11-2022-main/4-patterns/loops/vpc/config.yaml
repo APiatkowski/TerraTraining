@@ -1,0 +1,27 @@
+vpcs:
+  - name: frankfurt
+    cidr: 10.10.0.0/20 
+    region: eu-central-1 # this attribute is required
+    endpoints: # this attribute is not declared so it is omitted
+      - ecr
+      - s3
+    azs: 3
+    subnets:
+      - name: pub
+        type: public
+        cidrs:
+          - 10.10.1.0/24
+          - 10.10.2.0/24
+          - 10.10.3.0/24
+      - name: prv 
+        type: private
+        cidrs:
+          - 10.10.4.0/24
+          - 10.10.5.0/24
+          - 10.10.6.0/24
+      - name: eks
+        type: private
+        cidrs:
+          - 10.10.7.0/24
+          - 10.10.8.0/24
+          - 10.10.9.0/24

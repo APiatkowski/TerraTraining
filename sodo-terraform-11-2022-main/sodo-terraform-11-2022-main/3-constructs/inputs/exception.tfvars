@@ -1,0 +1,1 @@
+simple_string = "This string is set up by exception.tfvars"
